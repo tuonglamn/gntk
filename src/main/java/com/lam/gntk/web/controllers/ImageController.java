@@ -26,7 +26,7 @@ public class ImageController {
 	@Autowired
 	private DropboxService dropboxService;
 
-	@RequestMapping(value = "/images/{file}.{ext}", method = RequestMethod.GET)
+	@RequestMapping(value = "/imgs/{file}.{ext}", method = RequestMethod.GET)
 	public @ResponseBody void generateImage(
 	        @PathVariable("file") String file, 
 	        @PathVariable("ext") String ext,
