@@ -1,4 +1,12 @@
+/**
+ * 
+ */
 package com.lam.gntk.web.controllers;
+
+/**
+ * @author LamNguyen
+ *
+ */
 
 import java.io.IOException;
 import java.io.InputStream;
