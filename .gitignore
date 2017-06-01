@@ -12,6 +12,7 @@
 .factorypath
 .recommenders
 bin
+node_modules
 build
 lib/
 target
