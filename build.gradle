@@ -41,44 +41,10 @@ dependencies {
 bower {
     installBase = 'src/main/resources/static/bower_components'
     
-    'angular'('~1.5.5') {
-        source 'angular.min.js'
-    }
-    'angular-animate'('~1.5.5') {
-        source 'angular-animate.min.js'
-    }
-    'angular-aria'('~1.5.5') {
-        source 'angular-aria.min.js'
-    }
-    'angular-route'('~1.5.5') {
-        source 'angular-route.min.js'
-    }
-    'angular-loader'('~1.5.5') {
-        source 'angular-loader.min.js'
-    }
-    'angular-mocks'('~1.5.5') {
-        source 'angular-mocks.min.js'
-    }
-    'angulartics'('~1.0.3') {
-        source 'angulartics.min.js'
-    }
-    'angulartics-google-analytics'('0.2.0') {
-        source 'angulartics-google-analytics.min.js'
-    }
-    'html5-boilerplate'('5.3.0') {
-        // without '>>', modernizr-2.8.3.min.js would sit at the root of the folder
-        // this syntax preserves the path that a cli 'bower install' would produce
-        source 'dist/js/vendor/modernizr-2.8.3.min.js' >> 'dist/js/vendor/modernizr-2.8.3.min.js'
-    }
-    'angular-material'('1.0.7') {
-        source 'angular-material.min.js'
-        source 'angular-material.min.css'
-    }
-    'uw-ui-toolkit'('0.4.1') {
-        // same use of '>>' to preserve same paths as cli 'bower install'
-        source 'dist/css/uw-ui-toolkit.min.css' >> 'dist/css/uw-ui-toolkit.min.css'
-        source 'dist/js/uw-ui-toolkit.min.js' >> 'dist/js/uw-ui-toolkit.min.js'
-        source 'dist/img/uwcrest_web_sm.png' >> 'dist/img/uwcrest_web_sm.png'
-    }
-    'moment'('2.12.0')
+    'angular'('latest')
+    
+    'requirejs'('latest')
+    
+    'requirejs-domready'('latest')
+    
 }
