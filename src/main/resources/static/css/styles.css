@@ -1,77 +1,26 @@
-body>header {
-    background: #eee;
-    padding: 5px;
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+header#home {
+	max-width:1600px;
+	min-width:500px
 }
 
-body>header>a>img, body>header a  {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 5px;
-    font-size: 1.2em;
+#mySidebar {
+	z-index:3;
+	width:250px;
+	display:none;
+	right:0;
 }
 
-body>footer {
-    background: #eee;
-    padding: 5px;
-    margin: 10px 0;
-    text-align: center;
+div.content {
+	max-width:1100px
 }
 
-#logged-in-info {
-    float: right;
-    margin-top: 18px;
-}
-
-#logged-in-info form {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-body>aside {
-    float: right;
-    width: 200px;
-    background: #CCC;
-    padding: 15px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-body>aside h2 {
-    margin: 5px 0px 15px 0px;
-}
-
-body>aside a {
-    display: block;
-    margin: 5px 0px;
-    text-decoration: none;
-}
-
-body>main:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-ul#messages li {
-    display: block;
-    width: 80%;
-    margin: 5px auto;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-ul#messages li.info {
-    background: #7f7;
-}
-
-ul#messages li.error {
-    background: #d00;
-    color: white;
-}
-
-.formError {
-    color: red;
-    font-style: italic;
-    font-size: 0.9em;
+#map-canvas {
+    height: 300px;
+    width: 600px;
+    background-color: #CCC;
 }
