@@ -6,8 +6,8 @@
 		<link rel="stylesheet" href="../static/css/default.css" th:href="@{/css/default.css}" />
 		<link rel="stylesheet" href="../static/css/styles.css" th:href="@{/css/styles.css}" />
 		<link rel="icon" href="../static/img/favicon.ico" th:href="@{/img/favicon.ico}" />
-		<script src="../static/js/jquery-3.1.0.min.js" th:src="@{/js/jquery-3.1.0.min.js}"></script>
-		<script src="../static/js/app.js" th:src="@{/js/app.js}"></script>
+		<script src="../static/js/bower/requirejs/require.js" th:src="@{/js/bower/requirejs/require.js}"
+				data-main="/js/main.js" th:data-main="@{/js/main.js}"></script>
 		<meta th:include="this::head" th:remove="tag"/>
 	</head>
 	
@@ -15,7 +15,7 @@
 		<div th:fragment="site-navbar" class = "top">
 			<div class="bar white padding card-2" style="letter-spacing:4px;">
 			    <a href="#home" class="bar-item button"><b>G</b>ames <b>N</b>eed</a>
-			    <a href="javascript:void(0)" class="right button white hide-large hide-medium" onclick="sideBar_open()">☰</a>
+			    <a href="javascript:void(0)" class="right button white hide-large hide-medium" id ="sideBarToggle">☰</a>
 			    <!-- Right-sided navbar links. Hide them on small screens -->
 			    <div class="right hide-small">
 			      <a href="#about" class="bar-item button">About</a>
@@ -24,11 +24,11 @@
 			    </div>
 			  </div>
 			  <nav class="sidebar bar-block animate-right top large" id="mySidebar">
-				  <a href="javascript:void()" onclick="sideBar_close()" class="bar-item button left padding-32">☰</a> 
-				  <a href="#home" onclick="sideBar_close()" class="bar-item button left padding-16">Home</a>
-				   <a href="#about" onclick="sideBar_close()" class="bar-item button left padding-16">About</a>
-				  <a href="#menu" onclick="sideBar_close()" class="bar-item button left padding-16">Menu</a> 
-				  <a href="#contact" onclick="sideBar_close()" class="bar-item button left padding-16">Contact</a>
+				  <a href="javascript:void()" class="bar-item button left padding-32" id="sideItem">☰</a> 
+				  <a href="#home" class="bar-item button left padding-16" id="sideItem">Home</a>
+				  <a href="#about" class="bar-item button left padding-16" id="sideItem">About</a>
+				  <a href="#menu" class="bar-item button left padding-16" id="sideItem">Menu</a> 
+				  <a href="#contact" class="bar-item button left padding-16" id="sideIem">Contact</a>
 			  </nav>
 		</div>
 		
