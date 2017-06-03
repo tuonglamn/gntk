@@ -39,7 +39,9 @@ dependencies {
 }
 
 bower {
-    installBase = 'src/main/resources/static/bower_components'
+    installBase = 'src/main/resources/static/js/bower'
+    
+    'jquery'('latest')
     
     'angular'('latest')
     

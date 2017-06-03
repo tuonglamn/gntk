@@ -11,7 +11,7 @@ function sideBar_close() {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAzIDW9AZseqnR8vcY12OtfQPIV_MODSXQ&sensor=FALSE&callback=myMap";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAzIDW9AZseqnR8vcY12OtfQPIV_MODSXQ&callback=myMap";
   document.body.appendChild(script);
 }
 
