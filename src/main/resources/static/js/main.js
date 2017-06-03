@@ -5,8 +5,8 @@ requirejs.config({
         'angular': 'bower/angular/angular',
         'googlemaps': 'bower/googlemaps-amd/googlemaps',
         'async': 'bower/requirejs-plugins/async',
-        'map': 'lib/map',
-        'app': 'lib/app'
+        'map': 'common/map',
+        'app': 'common/app'
     },
     googlemaps: {
     	params: {
