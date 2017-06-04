@@ -6,7 +6,7 @@ requirejs.config({
         'googlemaps': 'bower/googlemaps-amd/googlemaps',
         'async': 'bower/requirejs-plugins/async',
         'map': 'common/map',
-        'app': 'common/app'
+        'temp': 'common/temp'
     },
     googlemaps: {
     	params: {
@@ -19,7 +19,7 @@ requirejs.config({
     }
 });
 
-require(['jquery','app','map'],function($, app, map){
-	app.init();
+require(['jquery','temp','map'],function($, temp, map){
+	temp.init();
 	map.mapStart();
 });
