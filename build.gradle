@@ -45,12 +45,14 @@ bower {
     
     'angular'('latest')
     
+    'angular-route'('latest')
+    
+    'angularAMD'
+    
     'requirejs'('latest')
     
     'requirejs-plugins'('latest')
-    
-    'requirejs-domready'('latest')
-    
+     
     'googlemaps-amd'('1.0.1')
     
 }
