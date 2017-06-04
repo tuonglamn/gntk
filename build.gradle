@@ -31,6 +31,8 @@ dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	compile 'org.springframework.boot:spring-boot-devtools'
 	
+	compile 'net.sourceforge.nekohtml:nekohtml:1.9.21'
+	
 	compile 'org.apache.commons:commons-io:1.3.2'
 	
 	compile 'com.dropbox.core:dropbox-core-sdk:2.1.1'
@@ -44,14 +46,12 @@ bower {
     'jquery'('latest')
     
     'angular'('latest')
-    
-    'angular-route'('latest')
-    
-    'angularAMD'
-    
+           
     'requirejs'('latest')
     
     'requirejs-plugins'('latest')
+    
+    'requirejs-domready'('latest')
      
     'googlemaps-amd'('1.0.1')
     

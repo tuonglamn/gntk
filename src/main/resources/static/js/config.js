@@ -1,11 +1,13 @@
 requirejs.config({
+	baseUrl: 'js/',
 	paths: {
-        'jquery': 'js/bower/jquery/jquery',
-        'angular': 'js/bower/angular/angular',
-        'googlemaps': 'js/bower/googlemaps-amd/googlemaps',
-        'async': 'js/bower/requirejs-plugins/async',
-        'map': 'js/common/map',
-        'temp': 'js/common/temp'
+        'jquery': 'bower/jquery/jquery',
+        'angular': 'bower/angular/angular',
+        'googlemaps': 'bower/googlemaps-amd/googlemaps',
+        'async': 'bower/requirejs-plugins/async',
+        'domReady': 'bower/requirejs-domready/domReady',
+        'map': 'common/map',
+        'temp': 'common/temp'
     },
     googlemaps: {
     	params: {
@@ -13,7 +15,5 @@ requirejs.config({
     	}
     },
     shim: {
-    	'jquery': [],
-    	'app': ['jquery']
-    }
-});
+    	'jquery': []
+    }});
