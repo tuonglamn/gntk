@@ -24,8 +24,7 @@ public class HomeController {
 	
 	@RequestMapping("/")
     public String index(Model model) {
-		String gapi = env.getProperty("key.gapi") + "&";
-		model.addAttribute("gapi", gapi);
+		model.addAttribute("page", "index");
         return "index";
         
     }

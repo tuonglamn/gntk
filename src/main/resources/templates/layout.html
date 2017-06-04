@@ -6,8 +6,9 @@
 		<link rel="stylesheet" href="../static/css/default.css" th:href="@{/css/default.css}" />
 		<link rel="stylesheet" href="../static/css/styles.css" th:href="@{/css/styles.css}" />
 		<link rel="icon" href="../static/img/favicon.ico" th:href="@{/img/favicon.ico}" />
-		<script src="../static/js/bower/requirejs/require.js" th:src="@{/js/bower/requirejs/require.js}"
-				data-main="/js/main.js" th:data-main="@{/js/main.js}"></script>
+		<script src="../static/js/bower/requirejs/require.js" th:src="@{/js/bower/requirejs/require.js}"></script>
+		<script src="../static/js/config.js" th:src="@{/js/config.js}"></script>
+		<script src="../static/js/main.js" th:src="'/js/'+${page}+'.js'"></script>
 		<meta th:include="this::head" th:remove="tag"/>
 	</head>
 	
